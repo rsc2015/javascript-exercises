@@ -16,19 +16,28 @@
 
 var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
 
-var scoreA = [];
-var scoreB = [];
-var scoreC = [];
-var scoreD = [];
-var scoreF = [];
+var currentScore,
+    highestScore = 0, 
+    lowestScore = 100,
+    scoreA = [],
+    scoreB = [],
+    scoreC = [],
+    scoreD = [],
+    scoreF = [];
+
+// var lowestScore = 100;
+// var highestScore = 0;
+// var scoreA = [];
+// var scoreB = [];
+// var scoreC = [];
+// var scoreD = [];
+// var scoreF = [];
 
 var scoreElement = document.getElementById("scores");
 
 var scoreList = "";
 var currentScore = "";
 
-var lowestScore = 100;
-var highestScore = 0;
 
 for (var i = 0; i < scores.length; i++) {
   currentScore = scores[i];
@@ -74,6 +83,10 @@ for (var i = 0; i < scores.length; i++) {
 scoreElement.innerHTML = scoreList;
 
 console.log("scoreA", scoreA.length);
+console.log("scoreB", scoreB.length);
+console.log("scoreC", scoreC.length);
+console.log("scoreD", scoreD.length);
+console.log("scoreF", scoreF.length);
 
 console.log("currentScore", currentScore);
 
