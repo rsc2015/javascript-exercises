@@ -35,9 +35,11 @@ function coinCounter (money) {
 
     money = Math.round(money * 100);
     console.log("money", money);
+
     for (i = 0; i < coins.length; i++) {
         num = Math.floor(money / coins[i][0]);
         console.log("num", num);
+        
         money -= num * coins[i][0];
         console.log("money inside loop", money);
         
