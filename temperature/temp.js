@@ -25,70 +25,83 @@
   9. For any other temperature, the color should be green.
 */
 
-function toCelsius(temp) {
-  document.getElementById("temp-converted").innerHTML = Math.round((temp * (9 / 5)) + 32);
-    console.log("toCelsius", toCelsius);
+var convertField = document.getElementsByName("toConvert").item(0);
+var convertedF = document.getElementsByName("fanswer").item(0);
+var convertedC = document.getElementsByName("canswer").item(0);
 
-  var newCelTemp = document.getElementById("temp-converted").innerHTML;
-    console.log("newCelTemp", newCelTemp);
-    
-    if (newCelTemp >= 32) {
-      document.getElementById("temp-converted").style.color = "red";
-    } else if (newCelTemp <= 0) {
-      document.getElementById("temp-converted").style.color = "blue";
-    } else {
-      document.getElementById("temp-converted").style.color = "green";
-    };
+function colorCode (temp) {
+    if (temp > 90) {
+    convertedF.className = "hot";
+    convertedC.className = "hot";
+  } else if (temp < 32) {
+    convertedF.className = "cold";
+    convertedC.className = "cold";
+  } else {
+    convertedF.className = "normal";
+    convertedC.className = "normal";
+  }
 };
 
-function toFahrenheit (temp) {
-  document.getElementById("temp-converted").innerHTML = Math.round((temp - 32) * (5 / 9));  
-    console.log("toFahrenheit", toFahrenheit);
+function isFahrenheit (convertMe) {
+  var cels = (convertMe - 32) * 5 / 9;
+  var fahr = convertMe;
 
-  var newFahTemp = document.getElementById("temp-converted").innerHTML;
-    console.log("newFahTemp", newFahTemp); 
+  convertedF.value = fahr;
+  convertedC.value = cels;
 
-    if (newFahTemp >= 90) {
-      document.getElementById("temp-converted").style.color = "red";
-    } else if (newFahTemp <= 32) {
-      document.getElementById("temp-converted").style.color = "blue";
-    } else {
-      document.getElementById("temp-converted").style.color = "green";
-    };
+  colorCode(fahr);
 };
 
+function isCelsius (convertMe) {
+  var fahr = (convertMe * 9 / 5) + 32;
+  var cels = convertMe;
 
-// Get a reference to the button element in the DOM
-var button = document.getElementById("convert-button");
- console.log("button", button);
-var radio = document.getElementsByName("temp");
- console.log("radio", radio);
+  convertedF.value = fahr;
+  convertedC.value = cels;
 
-var clickedRadioButton = "";
-
-for (var i = 0; i < radio.length; i++) {
-  console.log("radio index", radio[i]);
-  radio[i].addEventListener("click", function(clickEvent) {
-    console.log("clickEvent", clickEvent);
-    clickedRadioButton = clickEvent.target.value;
-    console.log("clickedRadioButton", clickedRadioButton);
-  });
+  colorCode(fahr);
 };
 
-// This function should determine which conversion should
-// happen based on which radio button is selected.
+// This function should determine which conversion formulas to apply based on which unit radio button is selected.
 function determineConverter (clickEvent) {
-  if (clickedRadioButton === "celsius") {
-   toCelsius(parseInt(document.getElementById("orig-temp").value)); 
-  } 
-  if (clickedRadioButton === "fahrenheit") {
-   toFahrenheit(parseInt(document.getElementById("orig-temp").value));
-  };
-  console.log("event", clickEvent);
+  var units = document.getElementsByName("units");
+  var numberToConvert = convertField.value;
+
+    if (units.item(0).checked) {
+      isFahrenheit(numberToConvert);
+    } else if (units.item(1).checked) {
+      isCelsius(numberToConvert); 
+    } else {
+      alert("Please Select A Unit Type");
+    }
 };
 
-// Assign a function to be executed when the button is clicked
-button.addEventListener("click", determineConverter);
+// This function checks what key is being pressed in the input field
+function submitWithEnter (keyUpEvent) {  
+  console.log("keyUpEvent", keyUpEvent.keyIdentifier);
+  if (keyUpEvent.keyIdentifier === "Enter") {
+    determineConverter(this.value);
+  }
+};
+
+// Runs conversion when you hit enter
+convertField.addEventListener("keyup", submitWithEnter);
+
+// Convert Button
+var convertButton = document.getElementById("convert")
+convertButton.addEventListener("click", determineConverter);
+
+// Clear Button
+var clearButton = document.getElementById("clear")
+clearButton.addEventListener("click", function(){
+  document.getElementsByName("toConvert").item(0).value = "";
+  convertedF.value = "";
+  convertedC.value = "";
+  convertedF.className = "";
+  convertedC.className = "";
+});
+
+
 
 
 

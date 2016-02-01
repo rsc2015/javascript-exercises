@@ -7,23 +7,26 @@
 </head>
 
 <body>
-  <h1>Welcome to the Basic Javascript Temperature Converter</h1>
+  <header>Welcome to the Basic Javascript Temperature Converter</header>
 
-  <input type="text" id="orig-temp" placeholder="Enter Temperature">
+    <div>
+      <input type="number" name="toConvert" placeholder="Enter Temperature" style=" text-align: center">
+    </div>
+    
+    <div>
+      Fahrenheit: <input type="radio" name="units" value="f">
+      Celsius: <input type="radio" name="units" value="c">
+    </div>
+    
+    <div>
+      <input type="text" name="fanswer" class="right" readonly placeholder="Fahrenheit" style=" text-align: center">
+      <input type="text" name="canswer" class="right" readonly placeholder="Celsius" style=" text-align: center">
+    </div>
 
-  <form class="convert">
-
-    <input type="radio" name="temp" value="fahrenheit"> :Fahrenheit
-
-    <input type="radio" name="temp" value="celsius"> :Celsius
-
-  </form>
-
-  <div id="temp-converted"></div>
-
-  <button id="convert-button">Convert</button>
-
-  <button id="clear-button">Clear</button>
+    <div>
+      <button id="convert">Convert</button>
+      <button id="clear">Clear</button>
+    </div>
 
   <script src="temp.js"></script>
 
