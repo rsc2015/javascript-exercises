@@ -4,7 +4,7 @@ This repository is a growing colleciton of my solutions to simple Javascript exe
 
 ## See The Code Run 
 
-I've created a JSFiddle for some of the following exercises to demostrate how each exercise runs: 
+I've created a JSFiddle for the following exercises to demostrate how each exercise runs: 
 
 * [Boy Bands & Vegetables Arrays](https://jsfiddle.net/jessawynne/rxxnx76o/ "Boy Bands & Vegetables on JSFiddle")
 * [Calculator](https://jsfiddle.net/jessawynne/4g3yggd7/ "Calculator")
