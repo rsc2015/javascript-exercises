@@ -1,0 +1,35 @@
+header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+div {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.hot {
+  background-color: red;
+  color: white;
+}
+
+.cold {
+  background-color: blue;
+  color: white;
+}
+
+.normal {
+  background-color: green;
+  color: white;
+}
+
+div.key {
+  display: inline;
+  text-align: center;
+}
+
+p {
+  margin-left: 35px;
+  padding: 10px;
+  display: inline-block;
+}
