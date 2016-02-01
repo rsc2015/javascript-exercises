@@ -1,6 +1,6 @@
 # Overview 
 
-This repository is a growing colleciton of my solutions to simple Javascript exercises. 
+This repository is a growing colleciton of my solutions to simple JavaScript exercises. 
 
 ## See The Code Run 
 
@@ -11,7 +11,7 @@ I've created a JSFiddle for the following exercises to demostrate how each exerc
 * [Reindeer Array](https://jsfiddle.net/jessawynne/mez107Lu/ "Reindeer Array")
 * [Temperature Converter](https://jsfiddle.net/jessawynne/6brk2e4a/ "Temperature Converter")
 
-## Other Exercises
+## Other JavaScript Exercises
 
 * Car Manufacturing
 * Coin Converter

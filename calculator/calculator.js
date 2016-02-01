@@ -1,4 +1,4 @@
-//Basic Javascript Calculator
+//Basic JavaScript Calculator
 
 //BASIC MATHEMATICAL OPERATIONS
 

@@ -1,3 +1,3 @@
 # Pine Tree
 
-## Javascript Exercise from Nashville Software School 
+## JavaScript Exercise from Nashville Software School 

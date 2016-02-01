@@ -38,14 +38,3 @@ function coinCounter (money) {
 }
 
 console.log("coinCounter", coinCounter(1.13));
-
-
-
-
-
-
-
-
-
-
-

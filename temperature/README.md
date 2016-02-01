@@ -1,4 +1,4 @@
 # Temperature Converter
 
-## Javascript Exercise from Nashville Software School 
+## JavaScript Exercise from Nashville Software School 
 
