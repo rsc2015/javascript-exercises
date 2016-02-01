@@ -1,5 +1,5 @@
 //Basic Javascript Calculator
-//
+
 //BASIC MATHEMATICAL OPERATIONS
 
 /*
@@ -50,65 +50,66 @@ function subtract(first, second) {
   return operation(first, second);
 };
 
+var result = document.getElementById("result").innerHTML;
 
+document.getElementById("multiply").addEventListener("click", function(event) {
 
-// var result = document.getElementById("result").innerHTML;
+  var firstOperand = parseInt(document.getElementById("firstOperand").value);
+  var secondOperand = parseInt(document.getElementById("secondOperand").value);
 
-// document.getElementById("multiply").addEventListener("click", function(event) {
+  var result = performOperation(firstOperand, secondOperand, multiply);
+  document.getElementById("result").value = result;
+  console.log("multiply result", result);
+});
 
-//   var firstOperand = parseInt(document.getElementById("firstOperand").value);
-//   var secondOperand = parseInt(document.getElementById("secondOperand").value);
+document.getElementById("add").addEventListener("click", function(event) {
+  var firstOperand = parseInt(document.getElementById("firstOperand").value);
+  var secondOperand = parseInt(document.getElementById("secondOperand").value);
 
-//   var result = performOperation(firstOperand, secondOperand, multiply);
-//   document.getElementById("result").value = result;
-//   console.log("multiply result", result);
-// });
+  var result = performOperation(firstOperand, secondOperand, add);
+  document.getElementById("result").value = result;
+  console.log("add result", result);
+});
 
-// document.getElementById("add").addEventListener("click", function(event) {
-//   var firstOperand = parseInt(document.getElementById("firstOperand").value);
-//   var secondOperand = parseInt(document.getElementById("secondOperand").value);
+document.getElementById("subtract").addEventListener("click", function(event) {
+  var firstOperand = parseInt(document.getElementById("firstOperand").value);
+  var secondOperand = parseInt(document.getElementById("secondOperand").value);
 
-//   var result = performOperation(firstOperand, secondOperand, add);
-//   document.getElementById("result").value = result;
-//   console.log("add result", result);
-// });
+  result = performOperation(firstOperand, secondOperand, subtract);
+  document.getElementById("result").value = result;
+  console.log("subtract result", result);
+});
 
-// document.getElementById("subtract").addEventListener("click", function(event) {
-//   var firstOperand = parseInt(document.getElementById("firstOperand").value);
-//   var secondOperand = parseInt(document.getElementById("secondOperand").value);
+document.getElementById("divide").addEventListener("click", function(event) {
+  var firstOperand = parseInt(document.getElementById("firstOperand").value);
+  var secondOperand = parseInt(document.getElementById("secondOperand").value);
 
-//   result = performOperation(firstOperand, secondOperand, subtract);
-//   document.getElementById("result").value = result;
-//   console.log("subtract result", result);
-// });
-
-// document.getElementById("divide").addEventListener("click", function(event) {
-//   var firstOperand = parseInt(document.getElementById("firstOperand").value);
-//   var secondOperand = parseInt(document.getElementById("secondOperand").value);
-
-//   result = performOperation(firstOperand, secondOperand, divide);
-//   document.getElementById("result").value = result;
-//   console.log("divide result", result);
-// });
+  result = performOperation(firstOperand, secondOperand, divide);
+  document.getElementById("result").value = result;
+  console.log("divide result", result);
+});
 
 // CONCISE BASIC JAVASCRIPT CALCULATOR CODE
 
-var buttons = document.getElementsByTagName("button");
-var firstOperand, secondOperand;
+// function performCalculation(firstOperand, secondOperand, operation) {
+//   return operation(firstOperand, secondOperand);
+// };
 
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function(event) {
-    firstOperand = parseInt(document.getElementById("firstOperand").value, 10);
-    secondOperand = parseInt(document.getElementById("secondOperand").value);
+// var buttons = document.getElementsByTagName("button");
+// var firstOperand, secondOperand;
 
-    var operation = window[event.target.id];
+// for (var i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener("click", function (event) {
+//     firstOperand = parseInt(document.getElementById("firstOperand").value, 10);
+//     secondOperand = parseInt(document.getElementById("secondOperand").value);
 
+//     var operation = window[event.target.id];
 
-    var result = performCalculation(firstOperand, secondOperand, operation);
+//     var result = performCalculation(firstOperand, secondOperand, operation);
 
-    document.getElementById("result").innerHTML = result;
-    console.log("result",result);
-  });
-}
+//     document.getElementById("result").innerHTML = result;
+//     console.log("result",result);
+//   });
+// }
 
 
