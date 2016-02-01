@@ -39,7 +39,7 @@ function toCelsius(temp) {
     } else {
       document.getElementById("temp-converted").style.color = "green";
     };
-}
+};
 
 function toFahrenheit (temp) {
   document.getElementById("temp-converted").innerHTML = Math.round((temp - 32) * (5 / 9));  
@@ -55,7 +55,7 @@ function toFahrenheit (temp) {
     } else {
       document.getElementById("temp-converted").style.color = "green";
     };
-}
+};
 
 
 // Get a reference to the button element in the DOM
@@ -73,7 +73,7 @@ for (var i = 0; i < radio.length; i++) {
     clickedRadioButton = clickEvent.target.value;
     console.log("clickedRadioButton", clickedRadioButton);
   });
-}
+};
 
 // This function should determine which conversion should
 // happen based on which radio button is selected.
@@ -85,7 +85,7 @@ function determineConverter (clickEvent) {
    toFahrenheit(parseInt(document.getElementById("orig-temp").value));
   };
   console.log("event", clickEvent);
-}
+};
 
 // Assign a function to be executed when the button is clicked
 button.addEventListener("click", determineConverter);

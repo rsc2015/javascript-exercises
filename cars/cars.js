@@ -47,7 +47,3 @@ var yourCar = new Car("Blue");
 // Create the third car
 var hisCar = new Car("Orange");
 
-
-console.log("myCar", myCar);
-console.log("yourCar", yourCar);
-console.log("hisCar", hisCar);

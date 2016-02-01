@@ -17,25 +17,6 @@
 
 // Create your function here. Make sure it takes the height argument.
 
-// var tree = function(height) {
-//   var i, 
-//       branch = "*",
-//       pinetree = [];
-//       console.log("pinetree", pinetree);
-
-//   if (i = 1) {
-//     branch = height + 2;
-//     console.log("branch", branch);
-//   }
-//   // for (i = 0; i = (height + 2); i++) {
-//   //   document.write(height[i]+' ');
-//   // }
-
-//   return pinetree;
-// };
-
-// console.log("tree", tree(7));
-
 var tree = function(height) {
   var pinetree = [];
   pinetree[height] = "*";

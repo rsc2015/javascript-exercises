@@ -1,3 +1,7 @@
+//Basic Javascript Calculator
+//
+//BASIC MATHEMATICAL OPERATIONS
+
 /*
   Create a function that multiplies two numbers
   passed in as arguments. Return the product.
@@ -33,7 +37,6 @@ function subtract(first, second) {
  }
 
 
-
 /*
   Create a function that accepts three arguments.
     1. First number
@@ -45,7 +48,9 @@ function subtract(first, second) {
 
  function performOperation (first, second, operation) {
   return operation(first, second);
-}
+};
+
+
 
 // var result = document.getElementById("result").innerHTML;
 
@@ -57,7 +62,7 @@ function subtract(first, second) {
 //   var result = performOperation(firstOperand, secondOperand, multiply);
 //   document.getElementById("result").value = result;
 //   console.log("multiply result", result);
-// })
+// });
 
 // document.getElementById("add").addEventListener("click", function(event) {
 //   var firstOperand = parseInt(document.getElementById("firstOperand").value);
@@ -66,7 +71,7 @@ function subtract(first, second) {
 //   var result = performOperation(firstOperand, secondOperand, add);
 //   document.getElementById("result").value = result;
 //   console.log("add result", result);
-// })
+// });
 
 // document.getElementById("subtract").addEventListener("click", function(event) {
 //   var firstOperand = parseInt(document.getElementById("firstOperand").value);
@@ -75,7 +80,7 @@ function subtract(first, second) {
 //   result = performOperation(firstOperand, secondOperand, subtract);
 //   document.getElementById("result").value = result;
 //   console.log("subtract result", result);
-// })
+// });
 
 // document.getElementById("divide").addEventListener("click", function(event) {
 //   var firstOperand = parseInt(document.getElementById("firstOperand").value);
@@ -84,7 +89,9 @@ function subtract(first, second) {
 //   result = performOperation(firstOperand, secondOperand, divide);
 //   document.getElementById("result").value = result;
 //   console.log("divide result", result);
-// })
+// });
+
+// CONCISE BASIC JAVASCRIPT CALCULATOR CODE
 
 var buttons = document.getElementsByTagName("button");
 var firstOperand, secondOperand;
