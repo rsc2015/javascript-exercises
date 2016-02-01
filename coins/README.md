@@ -1,4 +1,4 @@
-## Coin Converter
+# Coin Converter
 
-# Javascript Exercise from Nashville Software School 
+## Javascript Exercise from Nashville Software School 
 

@@ -1,3 +1,3 @@
-# Pine Tree
+# Grade Calculator
 
 ## Javascript Exercise from Nashville Software School 
