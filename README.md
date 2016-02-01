@@ -6,10 +6,10 @@ This repository is a growing colleciton of my solutions to simple Javascript exe
 
 I've created a JSFiddle for some of the following exercises to demostrate how each exercise runs: 
 
-* [Boy Bands & Vegetables Arrays](http://http://jsfiddle.net/jessawynne/rxxnx76o/ "Boy Bands & Vegetables on JSFiddle")
+* [Boy Bands & Vegetables Arrays](https://jsfiddle.net/jessawynne/rxxnx76o/ "Boy Bands & Vegetables on JSFiddle")
 * [Calculator](https://jsfiddle.net/jessawynne/4g3yggd7/ "Calculator")
 * [Reindeer Array](https://jsfiddle.net/jessawynne/mez107Lu/ "Reindeer Array")
-* [Temperature Converter](ttps://jsfiddle.net/jessawynne/6brk2e4a/ "Temperature Converter")
+* [Temperature Converter](https://jsfiddle.net/jessawynne/6brk2e4a/ "Temperature Converter")
 
 ## Other Exercises
 
